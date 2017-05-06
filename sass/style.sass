@@ -10,12 +10,15 @@
 
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type.scss
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+
 /*Meu CSS*/
 
 /*Cabeçalho*/
 body 
     background: url("../img/background.jpg") center center no-repeat fixed 
     background-size: cover
+    font-family: 'Open Sans', sans-serif
 .topo
     display: flex 
     flex-direction: row  
@@ -48,8 +51,6 @@ body
         a 
             text-decoration: none
             color: #fff
-        
-
 /*Conteudo*/
 .conteudo
     display: flex
@@ -59,12 +60,26 @@ body
         color: #fff
         background: #000
         width: 50%
+        h1
+            padding: 20px 0px
         iframe
-            padding-top: 20px
+            padding-top: 15px
+.conteudoPride
+    width: 100%
+    background: #000
+    color: #fff  
+    div
+        padding: 20px  
+        text-align: center 
+        padding: 20px  
+        span 
+            font-size: 0.9em
+        p 
+            font-size: 1.2em    
+            
 .banercentral   
     img
         width: 100%
-
 /*Footer*/
 .rodape
     color: #fff

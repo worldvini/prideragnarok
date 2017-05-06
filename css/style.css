@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6405,7 +6406,8 @@ address {
 /*Cabeçalho*/
 body {
   background: url("../img/background.jpg") center center no-repeat fixed;
-  background-size: cover; }
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif; }
 
 .topo {
   display: flex;
@@ -6452,8 +6454,23 @@ body {
     color: #fff;
     background: #000;
     width: 50%; }
+    .conteudo div h1 {
+      padding: 20px 0px; }
     .conteudo div iframe {
-      padding-top: 20px; }
+      padding-top: 15px; }
+
+.conteudoPride {
+  width: 100%;
+  background: #000;
+  color: #fff; }
+  .conteudoPride div {
+    padding: 20px;
+    text-align: center;
+    padding: 20px; }
+    .conteudoPride div span {
+      font-size: 0.9em; }
+    .conteudoPride div p {
+      font-size: 1.2em; }
 
 .banercentral img {
   width: 100%; }
