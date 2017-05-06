@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container fundoTotal">
             <header  class="topo">
                 <div class="logo">
                     <img src="img/banner.png" alt="">
@@ -23,7 +23,7 @@
                     <li><a href="pride.html">PRIDE</a></li>
                     <li><a href="woete.html">WoE TE</a></li>
                     <li><a href="#">WoE 3RD</a></li>
-                    <li><a href="#">Videos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
@@ -40,12 +40,75 @@
             <section class="banercentral">
                 <img src="img/woete.jpg" alt="">
             </section>
+            <section class="build">
+                <div>
+                    <h1>Guia Guerra Transclasse Breakout Pride</h1>
+                </div>
+                <div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a id="Lgera" href="#">Gerais</a></li>
+                            <li><a id="Llord" href="#">Lorde (LK)</a></li>
+                            <li><a id="Lpala" href="#">Paladino</a></li>
+                            <li><a id="Lprof" href="#">Professor</a></li>
+                            <li><a id="Lelit" href="#">Atirador de Elite</a></li>
+                            <li><a id="Lcria" href="#">Criadores</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="gera"></div>
+                <div id="lord"></div>
+                <div id="pala"></div>
+                <div id="prof"></div>
+                <div id="elit"></div>
+                <div id="cria"></div> 
+            </section>
             <footer class="rodape">
                 <div>
                      <p>2017 - Todos os Direitos Reservados <br> Desenvolvido por <a href="https://worldvini.github.io/Vinicius_Silva_Fleury/">WorldVini Desenvolvimento Web</a></p>
                 </div>
             </footer>
         </div>
-        -
+        
+
+        <script>
+            $(document).ready(function(){
+                $("a").click(function(event){
+                    var link = $(this);
+                
+                    if(link.attr("id").match("Lgera"))
+                        $("#gera").show("slow");
+                    else
+                        $("#gera").hide("slow");
+
+                    if(link.attr("id").match("Llord"))
+                        $("#lord").show("slow");
+                    else
+                        $("#lord").hide("slow");
+
+                    if(link.attr("id").match("Lpala"))
+                        $("#pala").show("slow");
+                    else
+                        $("#pala").hide("slow");  
+
+                    if(link.attr("id").match("Lprof"))
+                        $("#prof").show("slow");
+                    else
+                        $("#prof").hide("slow"); 
+
+                    if(link.attr("id").match("Lelit"))
+                        $("#elit").show("slow");
+                    else
+                        $("#elit").hide("slow"); 
+
+                    if(link.attr("id").match("Lcria"))
+                        $("#cria").show("slow");
+                    else
+                        $("#cria").hide("slow");                 
+                
+                     event.preventDefault();                
+                    });                
+                });
+        </script>
     </body>
 </html>
