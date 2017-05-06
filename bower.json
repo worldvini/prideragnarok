@@ -1,0 +1,20 @@
+{
+  "name": "pride_groups",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vinicius da Silva Fleury - worldvini@hotmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
