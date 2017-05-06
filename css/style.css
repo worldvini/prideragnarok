@@ -6489,6 +6489,13 @@ body {
     margin: 0;
     padding: 15px; }
 
+.manual {
+  background-color: #111;
+  padding: 15px 35px;
+  text-align: justify; }
+  .manual h2, .manual h3, .manual h4 {
+    padding: 20px 0; }
+
 /*Footer*/
 .rodape {
   color: #fff; }

@@ -43,6 +43,8 @@
             <section class="build">
                 <div>
                     <h1>Guia Guerra Transclasse Breakout Pride</h1>
+                    <p>O guia consiste em mostrar um pouco de cada classe, como build, equipamentos, posicionamento e funções.</p>
+                    <p>Lembrando, monte seu personagem de acordo com sua vontade e condição ($$$)</p>
                 </div>
                 <div>
                     <nav class="menu">
@@ -56,12 +58,61 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="gera"></div>
-                <div id="lord"></div>
-                <div id="pala"></div>
-                <div id="prof"></div>
-                <div id="elit"></div>
-                <div id="cria"></div> 
+                <div class="manual" id="gera">
+                    <h2>Introdução</h2>
+                    <p>O mais importante da guerra transclasse é atingir os atributos necessários para não tomar status negativos (atordoamento/sono/silêncio/congelamento).</p>
+                    <p>Como fazer isso? Com build e equipamentos!</p>
+                    <p>Exemplo, para não ser atordoado é necessário fechar 100 pontos em vitalidade (Ex. 87 de vitalidade base + 13 por equipamentos). O mesmo é válido para sono (100 agilidade) e silêncio (100 inteligência)</p>
+                    <p>Obs: Nem todas as classes pegam imunidade a todos os debuffs, o principal a se evitar é atordoamento e sono! Silêncio se tira com poção verde/poção da recuperação/panaceia</p>
+                    <h3>Guia de classes</h3>
+                    <p>Pra começar, vamos mostrar equipamentos, build e consumíveis para fechar build e também para melhorar o desempenho do personagem ao decorrer da guerra.</p>
+                    <p>Lembre sempre que além dos atributos que você coloca na build de seu personagem deve-se contar com os bônus de classe e bônus e equipamentos e consumíveis (Ex. Armadura das valquírias +1 em all, palito de chocolate +15 vit, asas de arcanjo +1 em all, etc.)</p>
+                </div>
+                <div class="manual"  id="lord">
+                    <h2>LORDE (LK)</h2>
+                    <br>
+                    <h3>LORDE DE STATUS</h3>
+                    <p>O lorde de status tem como função passar status para seus oponentes, como por exemplo cristalização, sono profundo, incêndio, etc. Os equipamentos são voltados para tankar, visando DEFESA e não DANO.</p>
+                    <h4>Atributos</h4>
+                       <p> <strong>FOR:</strong> 4x</p>
+                       <p> <strong>AGI:</strong> 6x</p>
+                       <p> <strong>VIT:</strong> 90x + (FECHANDO 100) - Se tiver GR = 99 vit</p>
+                       <p> <strong>INT:</strong> 1</p>
+                       <p> <strong>DES:</strong> 3x +</p>
+                       <p> <strong>SOR:</strong> 1</p>
+                    <h4>Equipamentos</h4>
+                        <p><strong>Topo:</strong>Jejecap - Chifres místicos de bafomé - Quepe com pluma - Tiara arcana
+Cartas: Pesadelo – Marduk – Serpente suprema – Giearth</p>
+                        <p><strong>Meio:</strong>Diadema arco-íris – Rubor de batalha – Candura de shiva – Itens com [1] slot
+Cartas: Pesadelo – Marduk – Serpente suprema – Giearth</p>
+                        <p><strong>Boca:</strong>Lenço da compaixão – Exterminador – Orbes arcanos</p>
+                        <p><strong>Armadura:</strong>Couraça de boitatá – Armadura das valquírias
+    Cartas: Cavalo marinho – Druida maligno – Ghostring</p>
+                        <p><strong>Arma:</strong>Clava [4] – Maça [4] – Machado dos orcs [4]
+    Cartas: Sropho – Plagiador – Banaspaty</p>
+                        <p><strong>Escudo:</strong>Celestial – Valquíria – Piamette
+Cartas: Sapo de thara – Maya</p>
+                        <p><strong>Capa:</strong>Pedaço de pele do guardião – Mochila da aventura
+Cartas: Raydric – Núvem tóxica – Deviling</p>
+                        <p><strong>Sapato:</strong>Sapatos divergentes – Sapatos convergentes
+Cartas: Soldado atirador – Matyr – Ferus verde</p>
+                        <p><strong>Acessórios:</strong>Anel revigorante
+Cartas: Esporo – Fumacento – Crocodilo</p>
+                        <p><strong>Obs¹ :</strong>Tiara arcana só compensa ser usada com refino e somente em conjunto com os Orbes arcanos.</p>
+                        <p><strong>Obs² :</strong>Jejecap é uma ótima opção para quem deseja potar mastela</p>
+                        <p><strong>Obs³ :</strong>É indispensável o uso de esconderijo, sendo assim use um revigorante com fumacento ou o combo arcano (Tiara arcana + Orbes arcanas)</p>
+                </div>
+                <div  class="manual" id="pala">
+
+                </div>
+                <div  class="manual" id="prof">
+
+                </div>
+                <div  class="manual" id="elit">
+
+                </div>
+                <div  class="manual" id="cria">
+                    </div> 
             </section>
             <footer class="rodape">
                 <div>
@@ -70,7 +121,16 @@
             </footer>
         </div>
         
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#lord").hide("slow");
+                $("#pala").hide("slow");
+                $("#prof").hide("slow");
+                $("#elit").hide("slow");
+                $("#cria").hide("slow");
+            })
+        </script>    
         <script>
             $(document).ready(function(){
                 $("a").click(function(event){
